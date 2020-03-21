@@ -24,7 +24,7 @@ parser.add_argument('--name', required=True, type=str,
                     help='neural network name and training set')
 parser.add_argument('--out-dataset', default="LSUN_resize", type=str,
                     help='out-of-distribution dataset')
-parser.add_argument('--magnitude', default=0.0014, type=float,
+parser.add_argument('--magnitude', default=0.0004, type=float,
                     help='perturbation magnitude')
 parser.add_argument('--temperature', default=1000, type=int,
                     help='temperature scaling')
