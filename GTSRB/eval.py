@@ -1,5 +1,9 @@
 import argparse
 import os
+
+import sys
+sys.path.append("..")
+
 import shutil
 import time
 
