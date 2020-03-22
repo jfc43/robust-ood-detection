@@ -22,8 +22,6 @@ def get_curve(dir_name, stypes = ['MSP', 'ODIN']):
         novel.sort()
         end = np.max([np.max(known), np.max(novel)])
         start = np.min([np.min(known),np.min(novel)])
-        all = np.concatenate((known, novel))
-        all.sort()
         num_k = known.shape[0]
         num_n = novel.shape[0]
         tp[stype] = -np.ones([num_k+num_n+1], dtype=int)
@@ -48,13 +46,6 @@ def get_curve(dir_name, stypes = ['MSP', 'ODIN']):
                     k += 1
                     tp[stype][l+1] = tp[stype][l] - 1
                     fp[stype][l+1] = fp[stype][l]
-
-        j = num_k+num_n-1
-        for l in range(num_k+num_n-1):
-            if all[j] == all[j-1]:
-                tp[stype][j] = tp[stype][j+1]
-                fp[stype][j] = fp[stype][j+1]
-            j -= 1
 
         tpr95_pos = np.abs(tp[stype] / num_k - .95).argmin()
         fpr_at_tpr95[stype] = fp[stype][tpr95_pos] / num_n
