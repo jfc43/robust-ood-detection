@@ -29,7 +29,7 @@ It is tested under Ubuntu Linux 16.04.1 and Python 3.6 environment, and requries
 * eval_ood_detection.py: the script used to evaluate OOD detection performance of models.
 
 ### Example
-For CIFAR-10 experiments, you can run the following commands to get results.
+For CIFAR-10 experiments, you can run the following commands on CIFAR directory to get results.
 
 * train an ALOE model:
 
