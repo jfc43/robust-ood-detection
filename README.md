@@ -1,5 +1,5 @@
 # Robust Out-of-distribution Detection in Neural Networks
-This project is for the paper: Robust Out-of-distribution Detection in Neural Networks. Some codes are from [ODIN](https://github.com/facebookresearch/odin), [Outlier Exposure](https://github.com/hendrycks/outlier-exposure) and [deep Mahalanobis detector](https://github.com/pokaxpoka/deep_Mahalanobis_detector).
+This project is for the paper: [Robust Out-of-distribution Detection in Neural Networks](https://arxiv.org/abs/2003.09711). Some codes are from [ODIN](https://github.com/facebookresearch/odin), [Outlier Exposure](https://github.com/hendrycks/outlier-exposure) and [deep Mahalanobis detector](https://github.com/pokaxpoka/deep_Mahalanobis_detector).
 
 ## Preliminaries
 It is tested under Ubuntu Linux 16.04.1 and Python 3.6 environment, and requries some packages to be installed:
