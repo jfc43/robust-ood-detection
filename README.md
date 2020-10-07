@@ -70,3 +70,17 @@ For CIFAR-10 experiments, you can run the following commands on CIFAR directory 
 * Evaluate the robust OOD detection performance of Mahalanobis using Original model:
 
 `python eval_ood_detection.py --name Original --method mahalanobis --adv`
+
+### Citation 
+Please cite our work if you use the codebase: 
+```
+@article{chen2020robust,
+  title={Robust Out-of-distribution Detection in Neural Networks},
+  author={Chen, Jiefeng and Wu, Xi and Liang, Yingyu and Jha, Somesh and others},
+  journal={arXiv preprint arXiv:2003.09711},
+  year={2020}
+}
+```
+
+### License
+Please refer to the [LICENSE](LICENSE).
